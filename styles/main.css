@@ -168,11 +168,12 @@ ol {
 /*========= заголовок та кнопка ==========*/
 
 .title {
+    max-width: 1600px;
+    height: 600px;
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image:  url(../images/Img-hero-background.jpg), url(../images/Img-overlay.jpg);
-   
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero-background.jpg);
 }
 
 .title-main {
@@ -526,7 +527,8 @@ margin-right: 30px;
 /* стилізація посилань у футері */
 
 .join-in {
-    font-style: normal;
+    display: inline-block;
+font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -540,10 +542,10 @@ letter-spacing: 0.03em;
 .footer-grneral {
     align-items: baseline;
     display: flex;
+    gap: 70px;
 }
-.footer-address-contacts {
-    margin-right: 70px;
-}
+
+
 
 
 
@@ -598,6 +600,7 @@ letter-spacing: 0.03em;
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -615,15 +618,17 @@ letter-spacing: 0.03em;
     flex-basis: calc((100% - 60) / 3);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio {
+    display: block;
+}
+.portfolio-flex .portfolio:hover,
+.portfolio-flex .portfolio:focus 
+{
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%)
 }
 
-
 .portfolio-img {
     display: block;
-    box-shadow: inherit;
 }
 
 .card-text {
